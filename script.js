@@ -3,7 +3,7 @@ function playGame() {
     let computerScore = 0;
     
     for(let round = 1; round <= 5; round++) {
-        console.log(`\nRound` + round);
+        console.log(`\nRound ` + round);
         playRound(getHumanChoice(), getComputerChoice());
         console.log("Human Score: " + humanScore);
         console.log("Computer Score: " + computerScore);
@@ -67,6 +67,4 @@ function getHumanChoice() {
         alert("Invalid choice! Please enter rock, paper, or scissors.");
     }
 }
-
-// Start the game
 playGame();
